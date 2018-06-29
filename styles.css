@@ -1,0 +1,43 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 3px solid black;
+  
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  
+}
+#navbar ul li {
+   padding-bottom: .5em;
+
+  
+}
+.nav-link {
+  background-color: gray;
+  font-size: 1.5em;
+  border: 1px solid blue;
+
+}
+
+
+nav ul li a:link {
+  text-decoration: none; 
+  color: black;
+  
+}
+nav ul li a:visited {
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color:pink;
+}
+.doc-container {
+  display: flex;
+}
+#body-container {
+  padding-left: 2em;
+}
