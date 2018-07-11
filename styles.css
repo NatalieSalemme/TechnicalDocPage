@@ -1,33 +1,36 @@
+body h1 {
+  text-align: center; 
+}
+#nav-bar {
+  top:20px;
+ display: flex; 
+}
 .nav-container {
-  display: flex;
   flex-direction: column;
   height: 100vh;
   border: 3px solid black;
-  
+  position: fixed;
+  top: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 nav ul {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  
+  list-style-type: none;  
 }
 #navbar ul li {
    padding-bottom: .5em;
-
-  
-}
+  padding-right: 2em;
+} 
 .nav-link {
   background-color: gray;
   font-size: 1.5em;
   border: 1px solid blue;
-
+  display: flex;
 }
-
-
 nav ul li a:link {
   text-decoration: none; 
   color: black;
-  
+  justify-content: center;  
 }
 nav ul li a:visited {
   text-decoration: none;
@@ -37,7 +40,41 @@ nav ul li a:hover {
 }
 .doc-container {
   display: flex;
+  flex-direction: row;
 }
 #body-container {
   padding-left: 2em;
+  display: flex;
+}
+#main-doc {
+  padding-left: 16em;
+}
+code {
+  display: block;
+  background-color:#f7f7f7;
+}
+/* Media queries */
+@media only screen and (max-width: 815px) { 
+  #nav-bar{
+    display: flex;
+  }
+  .nav-link {
+    display: flex;
+  }
+  .nav-container {
+  width: 20%;
+  }
+  #main-doc {
+    margin-left: -6em;
+  } 
+}
+@media only screen and (max-width: 780px) {
+  .nav-container {
+    min-width: 10em;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #main-doc {
+    min-width: 18em;
+  }
 }
